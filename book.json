@@ -17,14 +17,14 @@
 		"title" : "R for Everyone",
 		"authors" : "Jared Lander",
 		"publisher" : "Addison Wesley",
-		"year : 2014,
+		"year" : 2014,
 		"pages" : 560
 	        },
 		{
 		"title" : "Practical Data Science with R",
 		"authors" : "Nina Zumel, John Mount",
 		"publisher" : "Manning",
-		"year : 2014,
+		"year" : 2014,
 		"pages" : 377
 	        }
 ]}

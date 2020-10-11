@@ -1,0 +1,120 @@
+---
+title: "Assignment 7 - Working with XML and JSON in R"
+author: "Peter"
+date: "10/11/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Requirement
+
+Pick three of your favorite books on one of your favorite subjects. At least one of the books should have more
+than one author. For each book, include the title, authors, and two or three other attributes that you find
+interesting.
+Take the information that you’ve selected about these three books, and separately create three files which
+store the book’s information in HTML (using an html table), XML, and JSON formats (e.g. “books.html”,
+“books.xml”, and “books.json”). To help you better understand the different file structures, I’d prefer that you
+create each of these files “by hand” unless you’re already very comfortable with the file formats.
+Write R code, using your packages of choice, to load the information from each of the three sources into
+separate R data frames. Are the three data frames identical?
+Your deliverable is the three source files and the R code. If you can, package your assignment solution up into
+an .Rmd file and publish to rpubs.com. [This will also require finding a way to make your three text files
+accessible from the web].
+
+### Loading of required libraries for this assignment
+
+```{r}
+# Loading of required libraries for this assignment
+library(DT)
+library(stringr)
+library(XML)
+library(RCurl)
+library(jsonlite)
+```
+
+I have chosen 4 different well known books for R- programming.
+
+### Reading HTML file in R
+
+
+
+```{r}
+# Reading of html file from Github
+
+html_parsed<-getURLContent("https://raw.githubusercontent.com/petferns/607-week7/main/book.html")
+
+#create data frame of the parsed html
+html<-readHTMLTable(html_parsed, stringsAsFactors = FALSE)
+html<-html[[1]]
+
+# View the html table data in a datatable
+datatable(html)
+
+# View the summary
+summary(html)
+```
+
+### Reading XML file in R
+
+```{r}
+# Read the XML file from Github
+xml_parsed<-getURL("https://raw.githubusercontent.com/petferns/607-week7/main/book.xml")
+
+#create data frame
+xml_parsed <- xmlParse(xml_parsed)
+xml<-xmlToDataFrame(xml_parsed, stringsAsFactors = FALSE)
+
+#Data viewing
+datatable(xml)
+
+#Summary
+summary(xml)
+```
+
+### Reading of JSON file in R
+
+
+```{r}
+#Read the JSON file stored in Github
+JSON_parsed <- fromJSON("https://raw.githubusercontent.com/petferns/607-week7/main/book.json")
+
+# Create a dataframe of the json
+json <- JSON_parsed[[1]]
+json <- as.data.frame(json)
+
+#View json table data in a datatable
+datatable(json)
+
+#Summary
+summary(json)
+
+```
+
+### Comparing the tables between HTML, XML and JSON
+
+We see from the above datatables the view of all the three tables are similar.
+
+Class of "title" column is matching in json and xml.
+
+```{r}
+class(xml$title)
+```
+
+```{r}
+class(json$title)
+```
+
+
+In the json table we stored authors in an array and in html its just character, so lets see if we can find the difference.
+
+```{r}
+class(html$authors)
+```
+```{r}
+class(json$authors)
+```
+We see the class of authors column is list in JSON and character in HTML.

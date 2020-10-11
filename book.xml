@@ -1,0 +1,32 @@
+<xml>
+<books>
+	<book id="1">
+	<title>R for Data Science</title>
+    <authors>Garrett Grolemund, Hadley Wickham</authors>
+    <publisher>O’Reilly</publisher>
+    <year>2017</year>
+    <pages>520</pages>
+	</book>
+<book id="2">
+	<title>Automated Data Collection with R</title>
+    <authors>Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis</authors>
+    <publisher>Wiley</publisher>
+    <year>2015</year>
+    <pages>452</pages>
+	</book>
+<book id="3">
+	<title>R for Everyone</title>
+    <authors>Jared Lander</authors>
+    <publisher>Addison Wesley</publisher>
+    <year>2014</year>
+    <pages>560</pages>
+	</book>
+  <book id="4">
+	<title>Practical Data Science with R</title>
+    <authors>Nina Zumel, John Mount</authors>
+    <publisher>Manning</publisher>
+    <year>2014</year>
+    <pages>377</pages>
+	</book>
+
+</books></xml>

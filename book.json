@@ -2,13 +2,13 @@
 	       {
 		title : "R for Data Science",
 		authors : "Garrett Grolemund, Hadley Wickham",
-		publisher : "O’Reilly",
+		publisher : "O'Reilly",
 		year : 2017,
 		pages : 520
 	        },
 		{
 		title : "Automated Data Collection with R",
-		authors : "Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis",
+		authors : "Simon Munzert, Christian Rubba, Peter Meibner, Dominic Nyhuis",
 		publisher : "Wiley",
 		year : 2015,
 		pages : 452

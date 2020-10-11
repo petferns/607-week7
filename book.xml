@@ -3,13 +3,13 @@
 	<book id="1">
 	<title>R for Data Science</title>
     <authors>Garrett Grolemund, Hadley Wickham</authors>
-    <publisher>O’Reilly</publisher>
+    <publisher>O'Reilly</publisher>
     <year>2017</year>
     <pages>520</pages>
 	</book>
 <book id="2">
 	<title>Automated Data Collection with R</title>
-    <authors>Simon Munzert, Christian Rubba, Peter Meißner, Dominic Nyhuis</authors>
+    <authors>Simon Munzert, Christian Rubba, Peter Meibner, Dominic Nyhuis</authors>
     <publisher>Wiley</publisher>
     <year>2015</year>
     <pages>452</pages>

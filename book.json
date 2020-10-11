@@ -1,6 +1,6 @@
 {"books" : [
 	       {
-		""title"" : "R for Data Science",
+		"title" : "R for Data Science",
 		"authors" : "Garrett Grolemund, Hadley Wickham",
 		"publisher" : "O'Reilly",
 		"year" : 2017,

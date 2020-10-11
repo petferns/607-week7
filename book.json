@@ -1,16 +1,16 @@
 {"books" : [{
 		"title" : "R for Data Science",
-		"authors" : "Garrett Grolemund, Hadley Wickham",
+		"authors" : ["Garrett Grolemund", "Hadley Wickham"],
 		"publisher" : "O'Reilly",
 		"year" : 2017,
 		"pages" : 520
 	        },
 		{
 		"title" : "Automated Data Collection with R",
-		"authors" : "Simon Munzert, Christian Rubba, Peter Meibner, Dominic Nyhuis",
+		"authors" : ["Simon Munzert", "Christian Rubba", "Peter Meibner", "Dominic Nyhuis"],
 		"publisher" : "Wiley",
 		"year" : 2015,
-		"pages" : 452
+		"pagaes" : 452
 	        },
 		{
 		"title" : "R for Everyone",
@@ -21,7 +21,7 @@
 	        },
 		{
 		"title" : "Practical Data Science with R",
-		"authors" : "Nina Zumel, John Mount",
+		"authors" : ["Nina Zumel", "John Mount"],
 		"publisher" : "Manning",
 		"year" : 2014,
 		"pages" : 377
